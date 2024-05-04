@@ -54,12 +54,14 @@ const Gradient = () => {
             <div className="outputCode">
             <code style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
 
-            <Tooltip title="Copiar al portapapeles" position="bottom">
-                <div onClick={handleCopyToClipboard}>
+           
+                <div >
                     {output}
-                    &nbsp;<IoCopyOutline className="icon" style={{color: "gray", cursor: "pointer", fontSize: "20px", marginTop: "10px" }} />
+                    <Tooltip title="Copiar al portapapeles" position="bottom">
+                    &nbsp;<IoCopyOutline onClick={handleCopyToClipboard} className="icon" style={{color: "gray", cursor: "pointer", fontSize: "20px", marginTop: "10px" }} />
+                    </Tooltip>
                 </div>
-            </Tooltip>
+        
 </code>
 
             </div>
