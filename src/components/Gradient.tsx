@@ -45,7 +45,7 @@ const Gradient = () => {
 
     return (
         <div className="gradient">
-            <h1> Tittle </h1>
+            <h1> Generador de Gradientes </h1>
             <div className="colorPicker">
                 <input type='color' name='color1' value={color1} onChange={handleChangeColor} />
                 <input type='color' name='color2' value={color2} onChange={handleChangeColor} />
